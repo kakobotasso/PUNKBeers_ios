@@ -16,6 +16,7 @@
 		853352841F19CB4300A98D7D /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853352831F19CB4300A98D7D /* Beer.swift */; };
 		853352871F19CE2500A98D7D /* RequestApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853352861F19CE2500A98D7D /* RequestApi.swift */; };
 		853352891F19D1DC00A98D7D /* BeerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853352881F19D1DC00A98D7D /* BeerTableViewCell.swift */; };
+		8533528B1F19DF8600A98D7D /* BeerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8533528A1F19DF8600A98D7D /* BeerDetailViewController.swift */; };
 		A496881B4034330D12E9FB4B /* Pods_PUNKBeers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D985F6CA34FD2B476F6B05B9 /* Pods_PUNKBeers.framework */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +32,7 @@
 		853352831F19CB4300A98D7D /* Beer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
 		853352861F19CE2500A98D7D /* RequestApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestApi.swift; sourceTree = "<group>"; };
 		853352881F19D1DC00A98D7D /* BeerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerTableViewCell.swift; sourceTree = "<group>"; };
+		8533528A1F19DF8600A98D7D /* BeerDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerDetailViewController.swift; sourceTree = "<group>"; };
 		B6D57800A5206F1E88F23C27 /* Pods-PUNKBeers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PUNKBeers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PUNKBeers/Pods-PUNKBeers.debug.xcconfig"; sourceTree = "<group>"; };
 		D985F6CA34FD2B476F6B05B9 /* Pods_PUNKBeers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PUNKBeers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB8757F8857CDFFD218E5419 /* Pods-PUNKBeers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PUNKBeers.release.xcconfig"; path = "Pods/Target Support Files/Pods-PUNKBeers/Pods-PUNKBeers.release.xcconfig"; sourceTree = "<group>"; };
@@ -119,6 +121,7 @@
 			children = (
 				8533527B1F19C54800A98D7D /* BeersTableViewController.swift */,
 				853352881F19D1DC00A98D7D /* BeerTableViewCell.swift */,
+				8533528A1F19DF8600A98D7D /* BeerDetailViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8533528B1F19DF8600A98D7D /* BeerDetailViewController.swift in Sources */,
 				8533527C1F19C54800A98D7D /* BeersTableViewController.swift in Sources */,
 				853352891F19D1DC00A98D7D /* BeerTableViewCell.swift in Sources */,
 				8533526A1F19AC7C00A98D7D /* AppDelegate.swift in Sources */,

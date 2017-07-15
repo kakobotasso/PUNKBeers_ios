@@ -22,7 +22,7 @@
                                 <rect key="frame" x="0.0" y="28" width="320" height="104"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Zis-Wl-vfe" id="rPd-Q3-c4b">
-                                    <rect key="frame" x="0.0" y="0.0" width="320" height="103.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="104"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Fbm-k7-zam">
@@ -64,10 +64,10 @@
             </objects>
             <point key="canvasLocation" x="326.25" y="120.4225352112676"/>
         </scene>
-        <!--View Controller-->
+        <!--Beer Detail View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PUNKBeers" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="BeerDetailViewController" customModule="PUNKBeers" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -83,15 +83,15 @@
                                     <navigationItem title="Beer!!!!" id="2a2-oy-Ff6"/>
                                 </items>
                             </navigationBar>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFr-bA-x6x">
-                                <rect key="frame" x="16" y="70" width="288" height="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Berliner Weisse With Yuzu - B - Sides" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yFr-bA-x6x">
+                                <rect key="frame" x="16" y="64" width="288" height="53"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
                                 <color key="textColor" red="0.0" green="0.064703452186072083" blue="0.58417274746192893" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I1E-VC-mFV">
-                                <rect key="frame" x="16" y="113" width="288" height="21"/>
+                                <rect key="frame" x="16" y="115" width="288" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                 <color key="textColor" red="0.63131588697433472" green="0.6314089298248291" blue="0.63129550218582153" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -140,6 +140,14 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="ivPhoto" destination="TMe-ue-mqi" id="nOE-Qa-Xqi"/>
+                        <outlet property="lblAlcohol" destination="V9R-b4-q4f" id="Y8T-xy-ubn"/>
+                        <outlet property="lblIbu" destination="KjO-G9-u43" id="sUG-Xg-ANc"/>
+                        <outlet property="lblName" destination="yFr-bA-x6x" id="IBV-bf-mkL"/>
+                        <outlet property="lblTagline" destination="I1E-VC-mFV" id="bZb-vl-JHn"/>
+                        <outlet property="txtDescription" destination="iWc-XO-n25" id="jp0-9X-s5g"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

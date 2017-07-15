@@ -23,6 +23,12 @@ class BeersTableViewController: UITableViewController {
         requestBeers();
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let vc = segue.destination as? BeerDetailViewController {
+            vc.beer = beers[tableView.indexPathForSelectedRow!.row]
+        }
+    }
+    
     // MARK: - Table view data source
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
