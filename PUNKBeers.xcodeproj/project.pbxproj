@@ -8,21 +8,29 @@
 
 /* Begin PBXBuildFile section */
 		8533526A1F19AC7C00A98D7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853352691F19AC7C00A98D7D /* AppDelegate.swift */; };
-		8533526C1F19AC7D00A98D7D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8533526B1F19AC7D00A98D7D /* ViewController.swift */; };
 		8533526F1F19AC7D00A98D7D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8533526D1F19AC7D00A98D7D /* Main.storyboard */; };
 		853352711F19AC7D00A98D7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 853352701F19AC7D00A98D7D /* Assets.xcassets */; };
 		853352741F19AC7D00A98D7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 853352721F19AC7D00A98D7D /* LaunchScreen.storyboard */; };
+		8533527C1F19C54800A98D7D /* BeersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8533527B1F19C54800A98D7D /* BeersTableViewController.swift */; };
+		8533527E1F19C65200A98D7D /* NetworkApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8533527D1F19C65200A98D7D /* NetworkApi.swift */; };
+		853352841F19CB4300A98D7D /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853352831F19CB4300A98D7D /* Beer.swift */; };
+		853352871F19CE2500A98D7D /* RequestApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853352861F19CE2500A98D7D /* RequestApi.swift */; };
+		853352891F19D1DC00A98D7D /* BeerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 853352881F19D1DC00A98D7D /* BeerTableViewCell.swift */; };
 		A496881B4034330D12E9FB4B /* Pods_PUNKBeers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D985F6CA34FD2B476F6B05B9 /* Pods_PUNKBeers.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		853352661F19AC7C00A98D7D /* PUNKBeers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PUNKBeers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		853352691F19AC7C00A98D7D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8533526B1F19AC7D00A98D7D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8533526E1F19AC7D00A98D7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		853352701F19AC7D00A98D7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		853352731F19AC7D00A98D7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		853352751F19AC7D00A98D7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8533527B1F19C54800A98D7D /* BeersTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeersTableViewController.swift; sourceTree = "<group>"; };
+		8533527D1F19C65200A98D7D /* NetworkApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkApi.swift; sourceTree = "<group>"; };
+		853352831F19CB4300A98D7D /* Beer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
+		853352861F19CE2500A98D7D /* RequestApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestApi.swift; sourceTree = "<group>"; };
+		853352881F19D1DC00A98D7D /* BeerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BeerTableViewCell.swift; sourceTree = "<group>"; };
 		B6D57800A5206F1E88F23C27 /* Pods-PUNKBeers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PUNKBeers.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PUNKBeers/Pods-PUNKBeers.debug.xcconfig"; sourceTree = "<group>"; };
 		D985F6CA34FD2B476F6B05B9 /* Pods_PUNKBeers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PUNKBeers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB8757F8857CDFFD218E5419 /* Pods-PUNKBeers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PUNKBeers.release.xcconfig"; path = "Pods/Target Support Files/Pods-PUNKBeers/Pods-PUNKBeers.release.xcconfig"; sourceTree = "<group>"; };
@@ -69,14 +77,58 @@
 		853352681F19AC7C00A98D7D /* PUNKBeers */ = {
 			isa = PBXGroup;
 			children = (
-				853352691F19AC7C00A98D7D /* AppDelegate.swift */,
-				8533526B1F19AC7D00A98D7D /* ViewController.swift */,
-				8533526D1F19AC7D00A98D7D /* Main.storyboard */,
-				853352701F19AC7D00A98D7D /* Assets.xcassets */,
-				853352721F19AC7D00A98D7D /* LaunchScreen.storyboard */,
+				853352811F19CB0100A98D7D /* Delegates */,
+				8533527F1F19CAE100A98D7D /* Layouts */,
 				853352751F19AC7D00A98D7D /* Info.plist */,
+				853352821F19CB2B00A98D7D /* ViewControllers */,
+				853352801F19CAF000A98D7D /* API */,
+				853352851F19CB4700A98D7D /* Models */,
 			);
 			path = PUNKBeers;
+			sourceTree = "<group>";
+		};
+		8533527F1F19CAE100A98D7D /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				853352701F19AC7D00A98D7D /* Assets.xcassets */,
+				8533526D1F19AC7D00A98D7D /* Main.storyboard */,
+				853352721F19AC7D00A98D7D /* LaunchScreen.storyboard */,
+			);
+			name = Layouts;
+			sourceTree = "<group>";
+		};
+		853352801F19CAF000A98D7D /* API */ = {
+			isa = PBXGroup;
+			children = (
+				8533527D1F19C65200A98D7D /* NetworkApi.swift */,
+				853352861F19CE2500A98D7D /* RequestApi.swift */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		853352811F19CB0100A98D7D /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				853352691F19AC7C00A98D7D /* AppDelegate.swift */,
+			);
+			name = Delegates;
+			sourceTree = "<group>";
+		};
+		853352821F19CB2B00A98D7D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				8533527B1F19C54800A98D7D /* BeersTableViewController.swift */,
+				853352881F19D1DC00A98D7D /* BeerTableViewCell.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		853352851F19CB4700A98D7D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				853352831F19CB4300A98D7D /* Beer.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 		C617FA9580A2439B8682CA3D /* Pods */ = {
@@ -211,8 +263,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8533526C1F19AC7D00A98D7D /* ViewController.swift in Sources */,
+				8533527C1F19C54800A98D7D /* BeersTableViewController.swift in Sources */,
+				853352891F19D1DC00A98D7D /* BeerTableViewCell.swift in Sources */,
 				8533526A1F19AC7C00A98D7D /* AppDelegate.swift in Sources */,
+				853352871F19CE2500A98D7D /* RequestApi.swift in Sources */,
+				8533527E1F19C65200A98D7D /* NetworkApi.swift in Sources */,
+				853352841F19CB4300A98D7D /* Beer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -376,6 +432,7 @@
 				8533527A1F19AC7D00A98D7D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
