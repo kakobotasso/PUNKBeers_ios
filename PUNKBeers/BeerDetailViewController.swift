@@ -53,8 +53,17 @@ class BeerDetailViewController: UIViewController {
             lblIbu.text = "\(ibu)"
         }
         
-        // IMAGEM
+        if let url = beer.imageUrl {
+            loadImage(url)
+        }
         
+    }
+    
+    func loadImage(_ url: String){
+        let api = RequestApi()
+        api.requestPhoto(url: url) { response in
+            self.ivPhoto.image = response 
+        }
     }
 
 }

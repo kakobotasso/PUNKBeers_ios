@@ -27,8 +27,9 @@ class BeerTableViewCell: UITableViewCell {
     // MARK: - Methods
     func drawBeer(_ beer: Beer){
         
-        // IMAGEM
-        
+        if let url = beer.imageUrl {
+            loadImage(url);
+        }
         
         if let name = beer.name {
             lblDescription.text = name
@@ -36,6 +37,13 @@ class BeerTableViewCell: UITableViewCell {
         
         if let alcohol = beer.abv {
             lblAlcohol.text = "Teor Alcoólico: \(alcohol)"
+        }
+    }
+    
+    func loadImage(_ url: String){
+        let api = RequestApi()
+        api.requestPhoto(url: url) { response in
+            self.ivPhoto.image = response
         }
     }
 

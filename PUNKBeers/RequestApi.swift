@@ -29,4 +29,11 @@ class RequestApi {
         }
     }
     
+    func requestPhoto(url: String, completionHandler : @escaping (UIImage) -> Void){
+        Alamofire.request(url).responseData { response in
+            guard let data = response.result.value else { return }
+            completionHandler(UIImage(data: data)!)
+        }
+    }
+    
 }
