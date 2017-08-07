@@ -7,9 +7,8 @@
 //
 
 import Foundation
-import ObjectMapper
 
-class Beer : Mappable{
+class Beer {
     
     // MARK: - Properties
     var id: Int?
@@ -26,25 +25,4 @@ class Beer : Mappable{
     var srm: Double?
     var ph: Double?
     var attenuationLevel: Double?
-    
-    // MARK: - Initializers
-    required init?(map: Map) {}
-    
-    // MARK: - Methods
-    func mapping(map: Map){
-        id <- map["id"]
-        name <- map["name"]
-        tagline <- map["tagline"]
-        firstBrewed <- map["first_brewed"]
-        description <- map["description"]
-        imageUrl <- map["image_url"]
-        abv <- map["abv"]
-        ibu <- map["ibu"]
-        targetFg <- map["target_fg"]
-        targetOg <- map["target_og"]
-        ebc <- map["ebc"]
-        srm <- map["srm"]
-        ph <- map["ph"]
-        attenuationLevel <- map["attenuation_level"]
-    }
 }

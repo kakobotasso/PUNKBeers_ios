@@ -43,7 +43,9 @@ class BeerTableViewCell: UITableViewCell {
     func loadImage(_ url: String){
         let api = RequestApi()
         api.requestPhoto(url: url) { response in
-            self.ivPhoto.image = response
+            DispatchQueue.main.async {
+                self.ivPhoto.image = response
+            }
         }
     }
 

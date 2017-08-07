@@ -50,9 +50,15 @@ class BeersTableViewController: UITableViewController {
     // MARK: - Methods
     func requestBeers(){
         let api = RequestApi()
-        api.requestBeers() { response in
-            self.beers = response
-            self.tableView.reloadData()
+        api.requestBeers() { (beers: [Beer]? ) in
+            if let response = beers {
+                self.beers = response
+                
+                DispatchQueue.main.async {
+                    self.tableView.reloadData()
+                }
+            }
+            
         }
     }
 
